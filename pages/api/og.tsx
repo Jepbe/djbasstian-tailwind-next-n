@@ -24,6 +24,7 @@ export default function Og() {
     ),
     {
       width: 2400,
+      height: 1200,
     },
   );
 }
