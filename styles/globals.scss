@@ -1,0 +1,33 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+::selection {
+  color: theme('colors.dark');
+  background-color: theme('colors.select');
+}
+
+.navbar-links {
+  box-shadow: inset 0 0 0 0 theme("colors.light");
+  color: theme("colors.light");
+  // margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.navbar-links:hover {
+  box-shadow: inset 155px 0 0 0 theme("colors.light");
+  color: theme("colors.dark");
+}
+
+.mainBG {
+  background-position: center;
+  background-position-y: -5rem ;
+}
