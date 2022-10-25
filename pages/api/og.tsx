@@ -23,8 +23,8 @@ export default function Og() {
       </div>
     ),
     {
-      width: 2400,
-      height: 1200,
+      width: 1200,
+      height: 600,
     },
   );
 }
