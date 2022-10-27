@@ -13,7 +13,7 @@ export default function App() {
         />
         <link rel="icon" href="/BASS64x64Hvid.ico" />
       </Head>
-      <div className='w-screen h-screen bg-forsideBg2 mainBG bg-cover'>
+      <div className='w-screen h-screen bg-forsideBg2 mainBG bg-cover bg-center'>
 
       </div>
       <Navbar />
