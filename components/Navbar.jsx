@@ -32,6 +32,8 @@ export default function Navbar() {
             </li>
         );
 
+// test
+
     return (
         <>
         <nav className="fixed top-0 w-screen h-[60px]">
