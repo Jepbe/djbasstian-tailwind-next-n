@@ -28,11 +28,11 @@ export default function Navbar() {
     
     const navLinkLinks = navLinks.map(link =>
             <li className="ml-2" key={link.id}>
-                <button className="inline text-light">{link.icon} </button>
+                <button className="inline text-light text-xl sm:text-lg">
+                    <Link href={link.link}  target="_blank">  {link.icon}  </Link>
+                </button>
             </li>
         );
-
-// test
 
     return (
         <>
@@ -43,7 +43,7 @@ export default function Navbar() {
             <ul className="relative sm:left-[20vh] top-[0.5rem] flex flex-col justify-center text-center sm:flex-row sm:justify-start sm:text-center">{navListItems} </ul>
             <div className="z-10 absolute right-5 top-0 sm:hidden"><i><FaBars className="h-[60px] w-[30px] text-white" /></i></div>
         </nav>
-        <ul className="fixed top-[19px] right-14 sm:right-0 w-[104px] flex flex-row">{navLinkLinks}</ul>
+        <ul className="fixed top-[20px] right-[4.5rem] sm:right-5 w-[104px] flex flex-row">{navLinkLinks}</ul>
         </>
     )
 }
