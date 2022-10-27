@@ -36,3 +36,16 @@ body {
     background-position-y: 0;
   }
 }
+
+@media (max-width: 550px) {
+  .mainBG {
+    background-position-x: -25rem;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .mainBG {
+    background-position-x: -30rem;
+  }
+}
