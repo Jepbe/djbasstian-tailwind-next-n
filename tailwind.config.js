@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      "sans": ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen"]
+      // "sans": ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen"]
     },
     colors: {
       black: "#000000",
