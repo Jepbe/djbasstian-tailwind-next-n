@@ -12,7 +12,7 @@ export default function Navbar() {
         {title: 'Hvem er jeg?',link: '/hvemerjeg', id: 5},
     ];
     const navListItems = navItems.map(item =>
-            <li className="ml-10 sm:mt-0 mt-20 " key={item.id}>
+            <li className="sml:ml-10 hidden sm:ml-6 sm:block sm:mt-0 mt-20 " key={item.id}>
               <Link legacyBehavior href={item.link}>
                 <a className="navbar-links text-3xl sm:text-[16px]">{item.title}</a>
                 </Link>
@@ -39,9 +39,9 @@ export default function Navbar() {
                 <Image src={DJBASStianLogo} alt="Dj basstian blackl logo" />
             </div>
             <ul className="relative sm:left-[20vh] top-[0.5rem] flex flex-col justify-center text-center sm:flex-row sm:justify-start sm:text-center">{navListItems} </ul>
-            <div className="z-10 absolute right-10 top-0 sm:hidden"><i><FaBars className="h-[60px] w-[30px] text-white" /></i></div>
+            <div className="z-10 absolute right-5 top-0 sm:hidden"><i><FaBars className="h-[60px] w-[30px] text-white" /></i></div>
         </nav>
-        <ul className="absolute top-[19px] right-0 w-[104px] flex flex-row">{navLinkLinks}</ul>
+        <ul className="absolute top-[19px] right-14 sm:right-0 w-[104px] flex flex-row">{navLinkLinks}</ul>
         </>
     )
 }

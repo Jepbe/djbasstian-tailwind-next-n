@@ -27,7 +27,10 @@ module.exports = {
     },
     screens: {
       'sm': '700px',
-      // => @media (min-width: 576px) { ... }
+      // => @media (min-width: 700px) { ... }
+
+      'sml': '800px',
+      // => @meda (min-witdth: 800px) { ... }
 
       'md': '960px',
       // => @media (min-width: 960px) { ... }
