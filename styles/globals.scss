@@ -27,9 +27,12 @@ body {
   color: theme("colors.dark");
 }
 
-// .mainBG {
-//   background-position: center;
-//   background-position-y: -5rem ;
-//   background-repeat: no-repeat;
-  
-// }
+.mainBG {
+  background-position-y: -5rem ; 
+}
+
+@media (max-width: 1250px) {
+  .mainBG {
+    background-position-y: 0;
+  }
+}
