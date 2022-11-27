@@ -26,10 +26,10 @@ module.exports = {
       }
     },
     screens: {
-      'sm': '700px',
+      'sm': '750px',
       // => @media (min-width: 700px) { ... }
 
-      'sml': '800px',
+      'sml': '850px',
       // => @meda (min-witdth: 800px) { ... }
 
       'md': '960px',
