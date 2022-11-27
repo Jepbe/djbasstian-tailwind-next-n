@@ -1,8 +1,10 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import DJBASStianLogo from '/public/bass_logo_1_hvid.png';
 import { FaBars, FaInstagram, FaSoundcloud, FaYoutube, FaTiktok } from 'react-icons/fa';
 import { Roboto } from '@next/font/google';
+
 
 
 const roboto = Roboto({
@@ -19,7 +21,7 @@ export default function Navbar() {
         {title: 'Hvem er jeg?',link: '/hvemerjeg', id: 5},
     ];
     const navListItems = navItems.map(item =>
-            <li className={"sml:ml-10 hidden sm:ml-6 sm:block sm:mt-0 mt-20"} key={item.id}>
+            <li className={"sml:ml-10 navbarItem hidden sm:ml-6 sm:block sm:mt-0 mt-20"} key={item.id}>
               <Link legacyBehavior href={item.link}>
                     <a className="navbar-links text-3xl sm:text-[16px]">{item.title}</a>
                 </Link>
