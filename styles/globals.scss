@@ -53,3 +53,9 @@ body {
 .backgroundColor {
   background-color: rgba(0, 0, 0, 0.98);
 }
+
+@media (max-width: 750px) {
+  .backgroundColor {
+    display: flex !important;
+  }
+}

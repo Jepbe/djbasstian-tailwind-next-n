@@ -77,7 +77,7 @@ export default function Navbar() {
                 {navLinkLinks}
             </ul>
                 {open && // change style so it disappeare when sceen go bigger
-                    <ul className="backgroundColor mt-[-120vh] h-[120vh] flex justify-center text-center flex-col">
+                    <ul className="backgroundColor mt-[-120vh] h-[120vh] hidden justify-center text-center flex-col">
                         {navListItemsR} 
                     </ul>
                 } 
