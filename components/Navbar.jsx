@@ -30,7 +30,7 @@ export default function Navbar() {
             </li>
         );
     const navListItemsR = navItems.map(item =>
-        <li className={"sml:ml-10 sm:ml-6 sm:block sm:mt-0 mt-20"} key={item.id}>
+        <li className={"sml:ml-10 sm:ml-6 sm:block sm:mt-0 mt-16"} key={item.id}>
             <Link legacyBehavior href={item.link}>
                 <a className="navbar-links text-3xl sm:text-[16px]">{item.title}</a>
             </Link>
@@ -77,7 +77,7 @@ export default function Navbar() {
                 {navLinkLinks}
             </ul>
                 {open && // change style so it disappeare when sceen go bigger
-                    <ul className="backgroundColor mt-[-100vh] h-screen flex justify-center text-center flex-col">
+                    <ul className="backgroundColor mt-[-120vh] h-[120vh] flex justify-center text-center flex-col">
                         {navListItemsR} 
                     </ul>
                 } 
