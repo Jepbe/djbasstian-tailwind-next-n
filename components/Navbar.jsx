@@ -4,14 +4,16 @@ import Image from "next/image";
 import DJBASStianLogo from '/public/bass_logo_1_hvid.png';
 import { FaBars, FaInstagram, FaSoundcloud, FaYoutube, FaTiktok } from 'react-icons/fa';
 import { Roboto } from '@next/font/google';
+import { useState } from "react";
 
 
 
 const roboto = Roboto({
     weight: '500',
-  });
+});
 
 export default function Navbar() {
+    const [open, setOpen] = useState(false);
 
     const navItems = [
         {title: 'Hjem',link: '/', id: 1},
@@ -21,7 +23,7 @@ export default function Navbar() {
         {title: 'Hvem er jeg?',link: '/hvemerjeg', id: 5},
     ];
     const navListItems = navItems.map(item =>
-            <li className={"sml:ml-10 navbarItem hidden sm:ml-6 sm:block sm:mt-0 mt-20"} key={item.id}>
+            <li className={"sml:ml-10 hidden sm:ml-6 sm:block sm:mt-0 mt-20"} key={item.id}>
               <Link legacyBehavior href={item.link}>
                     <a className="navbar-links text-3xl sm:text-[16px]">{item.title}</a>
                 </Link>
@@ -46,14 +48,27 @@ export default function Navbar() {
     return (
         <>
         <div className={roboto.className}>
+        
         <nav className="fixed top-0 w-screen h-[60px]">
+          
             <div className="w-[120px] h-[100px] absolute top-[-15px] left-[2vh]">
                 <Image src={DJBASStianLogo} alt="Dj basstian blackl logo" />
             </div>
-            <ul className="relative sm:left-[20vh] top-[0.5rem] flex flex-col justify-center text-center sm:flex-row sm:justify-start sm:text-center">{navListItems} </ul>
-            <div className="z-10 absolute right-5 top-0 sm:hidden"><i><FaBars className="h-[60px] w-[30px] text-white" /></i></div>
+          
+            <ul className="relative sm:left-[20vh] top-[0.5rem] flex flex-col justify-center text-center sm:flex-row sm:justify-start sm:text-center">
+                {navListItems} 
+            </ul>
+          
+            <div className="z-10 absolute right-5 top-0 sm:hidden">
+                <i>
+                    <FaBars onClick={() => setOpen(!open)} className="h-[60px] w-[30px] text-white" />
+                </i>
+            </div>
+        
         </nav>
-        <ul className="fixed top-[20px] right-[4.5rem] sm:right-5 w-[104px] flex flex-row">{navLinkLinks}</ul>
+            <ul className="fixed top-[20px] right-[4.5rem] sm:right-5 w-[104px] flex flex-row">
+                {open && navLinkLinks}
+            </ul>
         </div>
         </>
     )
