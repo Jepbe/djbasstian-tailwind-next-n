@@ -52,4 +52,22 @@ body {
 
 .backgroundColor {
   background-color: rgba(0, 0, 0, 0.98);
+<<<<<<< Updated upstream
+=======
+}
+
+@media (max-width: 750px) {
+  .backgroundColor {
+    display: flex !important;
+  }
+}
+
+@media (max-height: 650px) {
+  .navListItemResponsive {
+    margin-top: 2.5rem;
+  }
+  .backgroundColor {
+    margin-top: -116vh;
+  }
+>>>>>>> Stashed changes
 }

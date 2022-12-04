@@ -30,7 +30,11 @@ export default function Navbar() {
             </li>
         );
     const navListItemsR = navItems.map(item =>
+<<<<<<< Updated upstream
         <li className={"sml:ml-10 sm:ml-6 sm:block sm:mt-0 mt-20"} key={item.id}>
+=======
+        <li className={"navListItemResponsive sml:ml-10 sm:ml-6 sm:block sm:mt-0 mt-16"} key={item.id}>
+>>>>>>> Stashed changes
             <Link legacyBehavior href={item.link}>
                 <a className="navbar-links text-3xl sm:text-[16px]">{item.title}</a>
             </Link>
@@ -76,8 +80,13 @@ export default function Navbar() {
             <ul className="fixed top-[20px] right-[4.5rem] sm:right-5 w-[104px] flex flex-row">
                 {navLinkLinks}
             </ul>
+<<<<<<< Updated upstream
                 {open && // change style so it disappeare when sceen go bigger
                     <ul className="backgroundColor mt-[-100vh] h-screen flex justify-center text-center flex-col">
+=======
+                {open &&
+                    <ul className="backgroundColor mt-[-120vh] h-[120vh] hidden justify-center text-center flex-col">
+>>>>>>> Stashed changes
                         {navListItemsR} 
                     </ul>
                 } 
