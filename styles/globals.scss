@@ -54,12 +54,10 @@ body {
   background-color: rgba(0, 0, 0, 0.98);
 }
 
-
 @media (max-width: 750px) {
   .backgroundColor {
     display: flex !important;
   }
-}
 
 @media (max-height: 650px) {
   .navListItemResponsive {
@@ -68,4 +66,3 @@ body {
   .backgroundColor {
     margin-top: -116vh;
   }
-}
