@@ -45,7 +45,7 @@ export default function handler(req: NextRequest) {
     const hasTitle = searchParams.has('title');
     const title = hasTitle
       ? searchParams.get('title')?.slice(0, 100)
-      : 'My default title';
+      : '';
 
     return new ImageResponse(
       (
@@ -76,7 +76,7 @@ export default function handler(req: NextRequest) {
               height={200}
               src="https://djbasstian-tailwind-next-n.vercel.app/djBasstianOriginal.png"
               style={{ margin: '0 30px' }}
-              width={232}
+              width={732}
             />
           </div>
           <div
