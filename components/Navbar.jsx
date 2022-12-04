@@ -56,7 +56,7 @@ export default function Navbar() {
         <>
         <div className={roboto.className}>
         
-        <nav className="fixed top-0 w-screen h-[60px]">
+        <nav className="fixed top-0 w-screen h-[60px] zindex">
           
             <div className="w-[120px] h-[100px] absolute top-[-15px] left-[2vh]">
                 <Image src={DJBASStianLogo} alt="Dj basstian blackl logo" />
@@ -66,19 +66,19 @@ export default function Navbar() {
                 {navListItems} 
             </ul>
           
-            <div className="z-10 absolute right-5 top-0 sm:hidden">
+            <div className="absolute right-5 top-0 sm:hidden">
                 <i>
                     <FaBars onClick={() => setOpen(!open) } className="h-[60px] w-[30px] text-white" />
                 </i>
             </div>
         
         </nav>
-            <ul className="fixed top-[20px] right-[4.5rem] sm:right-5 w-[104px] flex flex-row">
+            <ul className="fixed top-[20px] right-[4.5rem] sm:right-5 w-[104px] flex flex-row zindex">
                 {navLinkLinks}
             </ul>
                 {open && // change style so it disappeare when sceen go bigger
-                    <ul className="backgroundColor mt-[-120vh] h-[120vh] hidden justify-center text-center flex-col">
-                        {navListItemsR} 
+                    <ul className="backgroundColor mt-[-120vh] h-[120vh] hidden justify-center text-center flex-col w-screen absolute">
+                        {navListItemsR}
                     </ul>
                 } 
         </div>

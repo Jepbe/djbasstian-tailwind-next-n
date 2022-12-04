@@ -50,7 +50,7 @@ body {
 }
 
 .backgroundColor {
-  background-color: rgba(0, 0, 0, 0.98);
+  background-color: rgba(0, 0, 0, 0.99);
 }
 
 @media (max-width: 750px) {
@@ -68,4 +68,8 @@ body {
   .backgroundColor {
     margin-top: -116vh;
   }
+}
+
+.zindex {
+  z-index: 10 !important;
 }

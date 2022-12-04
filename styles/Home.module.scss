@@ -1,0 +1,29 @@
+// className='border-[2px] border-light text-[15px] text-light font-semibold h-[35px]'
+
+$light: #242424;
+
+.mainButtons {
+    border: 2px solid $light;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    height: 35px;
+    width: 10rem;
+    margin: 20px;
+    background-color: $light;
+}
+
+.mainButtons:hover {
+    background-color: transparent;
+    color: $light;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 750px) {
+    .mainButtons {
+        width: 100%;
+        margin-top: 2rem;
+        height: 50px;
+        font-size: 25px;
+    }
+}
