@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Watermark from '../components/Watermark'
 import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.scss'
+import Link from 'next/link'
 
 export default function App() {
   return (
@@ -18,8 +19,8 @@ export default function App() {
           <div>
             <h1 className='text-dark text-4xl text-center font-semibold'>DJ TIL DIN NÆSTE FEST!</h1>
             <div className='flex justify-center items-center flex-col sm:flex-row'>
-                <button className={styles.mainButtons}>KØB TØJ</button>  
-                <button className={styles.mainButtons}>BOOK</button>
+            <Link href="/butik"><button className={styles.mainButtons}>KØB TØJ</button></Link>  
+            <Link href="/kontakt"><button className={styles.mainButtons}>BOOK</button></Link>  
             </div>
           </div>  
       </div>
