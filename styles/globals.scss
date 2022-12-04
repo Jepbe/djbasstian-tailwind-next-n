@@ -28,7 +28,7 @@ body {
 }
 
 .mainBG {
-  background-position-y: -5rem ; 
+  background-position-y: -5rem; 
 }
 
 @media (max-width: 1250px) {
@@ -60,11 +60,11 @@ body {
   }
 }
 
-// @media screen and (max-height: 650px) {
-//   .navListItemResponsive {
-//     margin-top: 2.5rem;
-//   }
-//   .backgroundColor {
-//     margin-top: -116vh;
-//   }
-// }
+@media screen and (max-height: 650px) {
+  .navListItemResponsive {
+    margin-top: 2.5rem;
+  }
+  .backgroundColor {
+    margin-top: -116vh;
+  }
+}
