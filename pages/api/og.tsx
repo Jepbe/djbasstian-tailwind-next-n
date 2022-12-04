@@ -74,7 +74,7 @@ export default function handler(req: NextRequest) {
             <img
               alt="Vercel"
               height={200}
-              src="http://localhost:3000/djBasstianOriginal.png"
+              src="https://djbasstian-tailwind-next-n.vercel.app/djBasstianOriginal.png"
               style={{ margin: '0 30px' }}
               width={232}
             />
