@@ -30,7 +30,7 @@ export default function Navbar() {
             </li>
         );
     const navListItemsR = navItems.map(item =>
-        <li className={"sml:ml-10 sm:ml-6 sm:block sm:mt-0 mt-16"} key={item.id}>
+        <li className={"navListItemResponsive sml:ml-10 sm:ml-6 sm:block sm:mt-0 mt-16"} key={item.id}>
             <Link legacyBehavior href={item.link}>
                 <a className="navbar-links text-3xl sm:text-[16px]">{item.title}</a>
             </Link>
